@@ -2,8 +2,8 @@ baseURL: https://xnu.ivx.run
 title: Dissecting Apple
 languageCode: en-us
 enableRobotsTXT: true
-enableGitInfo: false
-hasCJKLanguage: false
+enableGitInfo: true
+# hasCJKLanguage: false
 
 module:
   imports:
@@ -20,33 +20,24 @@ markup:
 params:
   description: Tracking Apple platform CVEs and security advisories — automated weekly from Apple Security Releases and NVD.
 
-  navbar:
-    displayTitle: true
-    displayLogo: false
-
-  sidebar:
-    width: 272
-
-  page:
-    width: normal
-
   theme:
     default: dark
     displayToggle: true
 
   footer:
     enable: true
-    displayCopyright: false
+    displayCopyright: true
     displayPoweredBy: false
 
   editURL:
-    enable: false
+    enable: true
+    base: "https://github.com/0xcrypto/applesec/edit/main"
 
   search:
     enable: true
     type: flexsearch
     flexsearch:
-      index: content
+      index: title
       tokenize: forward
 
   blog:
@@ -85,6 +76,10 @@ menu:
       url: /visionOS/
       parent: more
       weight: 3
+    - name: Search
+      weight: 7
+      params:
+        type: search
     - name: GitHub ↗
       url: https://github.com/0xcrypto/applesec
       weight: 99
