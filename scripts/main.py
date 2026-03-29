@@ -5,6 +5,8 @@ import re
 import aiohttp
 from bs4 import BeautifulSoup
 from markdownify import markdownify as md
+import json
+import lzma
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -62,6 +64,7 @@ APPLE_CONCURRENCY = 150  # max concurrent requests to support.apple.com
 
 # NVD in-process cache and rate-limit semaphore (initialised inside main())
 _NVD_CACHE: dict = {}
+_DOWNLOADED_YEARS: set[str] = set()
 _NVD_SEMAPHORE: asyncio.Semaphore | None = None
 
 
@@ -266,104 +269,110 @@ async def get_soup(session, url):
         return None
 
 
-async def get_nvd_data(session, cve_id: str) -> dict | None:
-    """Fetch full CVE data from NVD API and return a structured dict."""
-    params = {"cveId": cve_id}
-    try:
-        async with session.get(NVD_API_URL, params=params) as response:
-            if response.status in (403, 429):
-                print(
-                    f"Rate limited by NVD for {cve_id} (status {response.status}). Waiting…"
-                )
-                await asyncio.sleep(30)
-                return await get_nvd_data(session, cve_id)
+def _parse_cve_obj(cve_obj: dict) -> dict:
+    metrics = cve_obj.get("metrics", {})
 
-            if response.status != 200:
-                print(f"NVD API error {response.status} for {cve_id}")
-                return None
+    # English description
+    description = next(
+        (
+            d["value"]
+            for d in cve_obj.get("descriptions", [])
+            if d.get("lang") == "en"
+        ),
+        "",
+    )
 
-            data = await response.json()
-            if not data.get("vulnerabilities"):
-                return None
+    # CVSS — prefer v3.1 > v3.0 > v2
+    cvss_data = None
+    severity = None
+    if "cvssMetricV31" in metrics:
+        m = metrics["cvssMetricV31"][0]
+        severity = m["cvssData"]["baseSeverity"].title()
+        cvss_data = m["cvssData"]
+    elif "cvssMetricV30" in metrics:
+        m = metrics["cvssMetricV30"][0]
+        severity = m["cvssData"]["baseSeverity"].title()
+        cvss_data = m["cvssData"]
+    elif "cvssMetricV2" in metrics:
+        m = metrics["cvssMetricV2"][0]
+        severity = m["baseMetricV2"]["severity"].title()
+        cvss_data = m["cvssData"]
 
-            cve_obj = data["vulnerabilities"][0]["cve"]
-            metrics = cve_obj.get("metrics", {})
+    # CWEs (deduplicated, skip catch-all entries)
+    cwes: list[str] = []
+    for w in cve_obj.get("weaknesses", []):
+        for d in w.get("description", []):
+            val = d.get("value", "")
+            if (
+                d.get("lang") == "en"
+                and val.startswith("CWE-")
+                and val not in cwes
+            ):
+                cwes.append(val)
 
-            # English description
-            description = next(
-                (
-                    d["value"]
-                    for d in cve_obj.get("descriptions", [])
-                    if d.get("lang") == "en"
-                ),
-                "",
-            )
+    # References
+    references = [
+        {"url": r["url"], "tags": r.get("tags", [])}
+        for r in cve_obj.get("references", [])
+        if r.get("url")
+    ]
 
-            # CVSS — prefer v3.1 > v3.0 > v2
-            cvss_data = None
-            severity = None
-            if "cvssMetricV31" in metrics:
-                m = metrics["cvssMetricV31"][0]
-                severity = m["cvssData"]["baseSeverity"].title()
-                cvss_data = m["cvssData"]
-            elif "cvssMetricV30" in metrics:
-                m = metrics["cvssMetricV30"][0]
-                severity = m["cvssData"]["baseSeverity"].title()
-                cvss_data = m["cvssData"]
-            elif "cvssMetricV2" in metrics:
-                m = metrics["cvssMetricV2"][0]
-                severity = m["baseMetricV2"]["severity"].title()
-                cvss_data = m["cvssData"]
+    return {
+        "severity": severity,
+        "description": description,
+        "cvss": cvss_data,
+        "cwes": cwes,
+        "references": references,
+    }
 
-            # CWEs (deduplicated, skip catch-all entries)
-            cwes: list[str] = []
-            for w in cve_obj.get("weaknesses", []):
-                for d in w.get("description", []):
-                    val = d.get("value", "")
-                    if (
-                        d.get("lang") == "en"
-                        and val.startswith("CWE-")
-                        and val not in cwes
-                    ):
-                        cwes.append(val)
 
-            # References
-            references = [
-                {"url": r["url"], "tags": r.get("tags", [])}
-                for r in cve_obj.get("references", [])
-                if r.get("url")
-            ]
+async def _ensure_year_downloaded(session, year: str) -> None:
+    if year in _DOWNLOADED_YEARS:
+        return
 
-            return {
-                "severity": severity,
-                "description": description,
-                "cvss": cvss_data,
-                "cwes": cwes,
-                "references": references,
-            }
+    async with _NVD_SEMAPHORE:
+        if year in _DOWNLOADED_YEARS:
+            return
 
-    except Exception as e:
-        print(f"Failed to fetch NVD data for {cve_id}: {e}")
-
-    return None
+        url = f"https://github.com/fkie-cad/nvd-json-data-feeds/releases/latest/download/CVE-{year}.json.xz"
+        print(f"Downloading NVD data for {year}...")
+        try:
+            async with session.get(url) as response:
+                if response.status != 200:
+                    print(f"Failed to download NVD data for {year}: HTTP {response.status}")
+                    _DOWNLOADED_YEARS.add(year)  # Mark as done so we don't spam requests
+                    return
+                content = await response.read()
+                
+            print(f"Parsing NVD data for {year}...")
+            # Decompress xz
+            json_data = lzma.decompress(content)
+            data = json.loads(json_data)
+            for cve_item in data.get("cve_items", []):
+                _NVD_CACHE[cve_item["id"]] = _parse_cve_obj(cve_item)
+                
+            _DOWNLOADED_YEARS.add(year)
+            print(f"Successfully loaded NVD data for {year}")
+        except Exception as e:
+            print(f"Error downloading/parsing NVD data for {year}: {e}")
+            _DOWNLOADED_YEARS.add(year)  # Prevent retry loop on fatal error
 
 
 async def _get_nvd_data_cached(session, cve_id: str) -> dict | None:
     """
-    Fetch NVD data with in-process caching and strict rate limiting.
-    Only one NVD request runs at a time to stay within the 5 req/30 s limit.
+    Fetch NVD data by downloading the entire year's CVEs from the fkie-cad archive.
     """
     if cve_id in _NVD_CACHE:
         return _NVD_CACHE[cve_id]
 
-    async with _NVD_SEMAPHORE:
-        # Re-check after acquiring the semaphore
-        if cve_id in _NVD_CACHE:
-            return _NVD_CACHE[cve_id]
-        data = await get_nvd_data(session, cve_id)
-        await asyncio.sleep(NVD_DELAY)
-        _NVD_CACHE[cve_id] = data
-        return data
+    year_match = re.search(r"CVE-(\d{4})-", cve_id)
+    if not year_match:
+        return None
+        
+    year = year_match.group(1)
+    await _ensure_year_downloaded(session, year)
+    
+    return _NVD_CACHE.get(cve_id)
 
 
 def _format_nvd_details(nvd_data: dict | None, cve_id: str, apple_url: str) -> str:
