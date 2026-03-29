@@ -6,7 +6,80 @@ This repository contains scripts for monitoring Apple Security Advisories, findi
 
 | CVE | Severity | iOS | iPadOS | macOS | tvOS | watchOS | visionOS | Safari | Xcode | Other |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| CVE-2026-28895 | Medium | [✅](Medium/CVE-2026-28895/iOS/advisory.md) | [✅](Medium/CVE-2026-28895/iPadOS/advisory.md) | | | | | | |  |
+| CVE-2026-28894 | High | [✅](High/CVE-2026-28894/iOS/advisory.md) | [✅](High/CVE-2026-28894/iPadOS/advisory.md) | [✅](High/CVE-2026-28894/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28893 | Low | | | [✅](Low/CVE-2026-28893/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28892 | Medium | | | [✅](Medium/CVE-2026-28892/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28891 | High | | | [✅](High/CVE-2026-28891/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28890 | Medium | | | | | | | | [✅](Medium/CVE-2026-28890/Xcode/advisory.md) |  |
+| CVE-2026-28889 | Medium | | | | | | | | [✅](Medium/CVE-2026-28889/Xcode/advisory.md) |  |
+| CVE-2026-28888 | Medium | | | [✅](Medium/CVE-2026-28888/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28886 | Medium | [✅](Medium/CVE-2026-28886/iOS/advisory.md) | [✅](Medium/CVE-2026-28886/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28886/macOS/advisory.md) | [✅](Medium/CVE-2026-28886/tvOS/advisory.md) | [✅](Medium/CVE-2026-28886/watchOS/advisory.md) | [✅](Medium/CVE-2026-28886/visionOS/advisory.md) | | |  |
+| CVE-2026-28882 | Medium | [✅](Medium/CVE-2026-28882/iOS/advisory.md) | [✅](Medium/CVE-2026-28882/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28882/macOS/advisory.md) | [✅](Medium/CVE-2026-28882/tvOS/advisory.md) | [✅](Medium/CVE-2026-28882/watchOS/advisory.md) | [✅](Medium/CVE-2026-28882/visionOS/advisory.md) | | |  |
+| CVE-2026-28881 | Medium | | | [✅](Medium/CVE-2026-28881/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28880 | Medium | [✅](Medium/CVE-2026-28880/iOS/advisory.md) | [✅](Medium/CVE-2026-28880/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28880/macOS/advisory.md) | | | [✅](Medium/CVE-2026-28880/visionOS/advisory.md) | | |  |
+| CVE-2026-28879 | Medium | [✅](Medium/CVE-2026-28879/iOS/advisory.md) | [✅](Medium/CVE-2026-28879/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28879/macOS/advisory.md) | [✅](Medium/CVE-2026-28879/tvOS/advisory.md) | [✅](Medium/CVE-2026-28879/watchOS/advisory.md) | [✅](Medium/CVE-2026-28879/visionOS/advisory.md) | | |  |
+| CVE-2026-28878 | Medium | [✅](Medium/CVE-2026-28878/iOS/advisory.md) | [✅](Medium/CVE-2026-28878/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28878/macOS/advisory.md) | [✅](Medium/CVE-2026-28878/tvOS/advisory.md) | [✅](Medium/CVE-2026-28878/watchOS/advisory.md) | [✅](Medium/CVE-2026-28878/visionOS/advisory.md) | | |  |
+| CVE-2026-28877 | Medium | [✅](Medium/CVE-2026-28877/iOS/advisory.md) | [✅](Medium/CVE-2026-28877/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28877/macOS/advisory.md) | | [✅](Medium/CVE-2026-28877/watchOS/advisory.md) | [✅](Medium/CVE-2026-28877/visionOS/advisory.md) | | |  |
+| CVE-2026-28876 | High | [✅](High/CVE-2026-28876/iOS/advisory.md) | [✅](High/CVE-2026-28876/iPadOS/advisory.md) | [✅](High/CVE-2026-28876/macOS/advisory.md) | | | [✅](High/CVE-2026-28876/visionOS/advisory.md) | | |  |
+| CVE-2026-28875 | High | [✅](High/CVE-2026-28875/iOS/advisory.md) | [✅](High/CVE-2026-28875/iPadOS/advisory.md) | | | | | | |  |
+| CVE-2026-28874 | High | [✅](High/CVE-2026-28874/iOS/advisory.md) | [✅](High/CVE-2026-28874/iPadOS/advisory.md) | | | | | | |  |
+| CVE-2026-28871 | Medium | [✅](Medium/CVE-2026-28871/iOS/advisory.md) | [✅](Medium/CVE-2026-28871/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28871/macOS/advisory.md) | | | | [✅](Medium/CVE-2026-28871/Safari/advisory.md) | |  |
+| CVE-2026-28870 | Medium | [✅](Medium/CVE-2026-28870/iOS/advisory.md) | [✅](Medium/CVE-2026-28870/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28870/macOS/advisory.md) | [✅](Medium/CVE-2026-28870/tvOS/advisory.md) | [✅](Medium/CVE-2026-28870/watchOS/advisory.md) | [✅](Medium/CVE-2026-28870/visionOS/advisory.md) | | |  |
+| CVE-2026-28868 | Medium | [✅](Medium/CVE-2026-28868/iOS/advisory.md) | [✅](Medium/CVE-2026-28868/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28868/macOS/advisory.md) | | [✅](Medium/CVE-2026-28868/watchOS/advisory.md) | [✅](Medium/CVE-2026-28868/visionOS/advisory.md) | | |  |
+| CVE-2026-28867 | Medium | [✅](Medium/CVE-2026-28867/iOS/advisory.md) | [✅](Medium/CVE-2026-28867/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28867/macOS/advisory.md) | [✅](Medium/CVE-2026-28867/tvOS/advisory.md) | [✅](Medium/CVE-2026-28867/watchOS/advisory.md) | [✅](Medium/CVE-2026-28867/visionOS/advisory.md) | | |  |
+| CVE-2026-28866 | Medium | [✅](Medium/CVE-2026-28866/iOS/advisory.md) | [✅](Medium/CVE-2026-28866/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28866/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28865 | High | [✅](High/CVE-2026-28865/iOS/advisory.md) | [✅](High/CVE-2026-28865/iPadOS/advisory.md) | [✅](High/CVE-2026-28865/macOS/advisory.md) | [✅](High/CVE-2026-28865/tvOS/advisory.md) | [✅](High/CVE-2026-28865/watchOS/advisory.md) | [✅](High/CVE-2026-28865/visionOS/advisory.md) | | |  |
+| CVE-2026-28864 | Low | [✅](Low/CVE-2026-28864/iOS/advisory.md) | [✅](Low/CVE-2026-28864/iPadOS/advisory.md) | [✅](Low/CVE-2026-28864/macOS/advisory.md) | | [✅](Low/CVE-2026-28864/watchOS/advisory.md) | [✅](Low/CVE-2026-28864/visionOS/advisory.md) | | |  |
+| CVE-2026-28863 | Medium | [✅](Medium/CVE-2026-28863/iOS/advisory.md) | [✅](Medium/CVE-2026-28863/iPadOS/advisory.md) | | [✅](Medium/CVE-2026-28863/tvOS/advisory.md) | [✅](Medium/CVE-2026-28863/watchOS/advisory.md) | [✅](Medium/CVE-2026-28863/visionOS/advisory.md) | | |  |
+| CVE-2026-28862 | Medium | | | [✅](Medium/CVE-2026-28862/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28861 | Medium | [✅](Medium/CVE-2026-28861/iOS/advisory.md) | [✅](Medium/CVE-2026-28861/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28861/macOS/advisory.md) | | | [✅](Medium/CVE-2026-28861/visionOS/advisory.md) | [✅](Medium/CVE-2026-28861/Safari/advisory.md) | |  |
+| CVE-2026-28859 | Medium | [✅](Medium/CVE-2026-28859/iOS/advisory.md) | [✅](Medium/CVE-2026-28859/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28859/macOS/advisory.md) | [✅](Medium/CVE-2026-28859/tvOS/advisory.md) | [✅](Medium/CVE-2026-28859/watchOS/advisory.md) | [✅](Medium/CVE-2026-28859/visionOS/advisory.md) | [✅](Medium/CVE-2026-28859/Safari/advisory.md) | |  |
+| CVE-2026-28858 | Critical | [✅](Critical/CVE-2026-28858/iOS/advisory.md) | [✅](Critical/CVE-2026-28858/iPadOS/advisory.md) | | | | | | |  |
+| CVE-2026-28857 | Medium | [✅](Medium/CVE-2026-28857/iOS/advisory.md) | [✅](Medium/CVE-2026-28857/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28857/macOS/advisory.md) | | | [✅](Medium/CVE-2026-28857/visionOS/advisory.md) | [✅](Medium/CVE-2026-28857/Safari/advisory.md) | |  |
+| CVE-2026-28856 | Medium | [✅](Medium/CVE-2026-28856/iOS/advisory.md) | [✅](Medium/CVE-2026-28856/iPadOS/advisory.md) | | | [✅](Medium/CVE-2026-28856/watchOS/advisory.md) | [✅](Medium/CVE-2026-28856/visionOS/advisory.md) | | |  |
+| CVE-2026-28855 | High | [✅](High/CVE-2026-28855/iOS/advisory.md) | [✅](High/CVE-2026-28855/iPadOS/advisory.md) | [✅](High/CVE-2026-28855/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28852 | Medium | [✅](Medium/CVE-2026-28852/iOS/advisory.md) | [✅](Medium/CVE-2026-28852/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28852/macOS/advisory.md) | [✅](Medium/CVE-2026-28852/tvOS/advisory.md) | [✅](Medium/CVE-2026-28852/watchOS/advisory.md) | [✅](Medium/CVE-2026-28852/visionOS/advisory.md) | | |  |
+| CVE-2026-28845 | Medium | | | [✅](Medium/CVE-2026-28845/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28844 | Medium | | | [✅](Medium/CVE-2026-28844/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28842 | High | | | [✅](High/CVE-2026-28842/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28841 | Medium | | | [✅](Medium/CVE-2026-28841/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28839 | Medium | | | [✅](Medium/CVE-2026-28839/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28838 | Medium | | | [✅](Medium/CVE-2026-28838/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28837 | High | | | [✅](High/CVE-2026-28837/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28835 | Medium | | | [✅](Medium/CVE-2026-28835/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28834 | Medium | | | [✅](Medium/CVE-2026-28834/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28833 | Medium | [✅](Medium/CVE-2026-28833/iOS/advisory.md) | [✅](Medium/CVE-2026-28833/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28833/macOS/advisory.md) | | | [✅](Medium/CVE-2026-28833/visionOS/advisory.md) | | |  |
+| CVE-2026-28832 | High | | | [✅](High/CVE-2026-28832/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28831 | Medium | | | [✅](Medium/CVE-2026-28831/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28829 | Medium | | | [✅](Medium/CVE-2026-28829/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28828 | Medium | | | [✅](Medium/CVE-2026-28828/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28827 | Critical | | | [✅](Critical/CVE-2026-28827/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28826 | Medium | | | [✅](Medium/CVE-2026-28826/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28825 | Medium | | | [✅](Medium/CVE-2026-28825/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28824 | Medium | | | [✅](Medium/CVE-2026-28824/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28823 | Medium | | | [✅](Medium/CVE-2026-28823/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28822 | Medium | [✅](Medium/CVE-2026-28822/iOS/advisory.md) | [✅](Medium/CVE-2026-28822/iPadOS/advisory.md) | [✅](Medium/CVE-2026-28822/macOS/advisory.md) | [✅](Medium/CVE-2026-28822/tvOS/advisory.md) | [✅](Medium/CVE-2026-28822/watchOS/advisory.md) | [✅](Medium/CVE-2026-28822/visionOS/advisory.md) | | |  |
+| CVE-2026-28821 | High | | | [✅](High/CVE-2026-28821/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28820 | Medium | | | [✅](Medium/CVE-2026-28820/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28818 | Medium | | | [✅](Medium/CVE-2026-28818/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28817 | High | | | [✅](High/CVE-2026-28817/macOS/advisory.md) | | | | | |  |
+| CVE-2026-28816 | Medium | | | [✅](Medium/CVE-2026-28816/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20701 | High | | | [✅](High/CVE-2026-20701/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20700 | High | [✅](High/CVE-2026-20700/iOS/advisory.md) | [✅](High/CVE-2026-20700/iPadOS/advisory.md) | [✅](High/CVE-2026-20700/macOS/advisory.md) | [✅](High/CVE-2026-20700/tvOS/advisory.md) | [✅](High/CVE-2026-20700/watchOS/advisory.md) | [✅](High/CVE-2026-20700/visionOS/advisory.md) | | |  |
+| CVE-2026-20699 | Medium | | | [✅](Medium/CVE-2026-20699/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20698 | High | [✅](High/CVE-2026-20698/iOS/advisory.md) | [✅](High/CVE-2026-20698/iPadOS/advisory.md) | [✅](High/CVE-2026-20698/macOS/advisory.md) | [✅](High/CVE-2026-20698/tvOS/advisory.md) | [✅](High/CVE-2026-20698/watchOS/advisory.md) | [✅](High/CVE-2026-20698/visionOS/advisory.md) | | |  |
+| CVE-2026-20697 | Medium | | | [✅](Medium/CVE-2026-20697/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20695 | Medium | | | [✅](Medium/CVE-2026-20695/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20694 | Medium | [✅](Medium/CVE-2026-20694/iOS/advisory.md) | [✅](Medium/CVE-2026-20694/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20694/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20693 | Medium | | | [✅](Medium/CVE-2026-20693/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20692 | Medium | [✅](Medium/CVE-2026-20692/iOS/advisory.md) | [✅](Medium/CVE-2026-20692/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20692/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20691 | Medium | [✅](Medium/CVE-2026-20691/iOS/advisory.md) | [✅](Medium/CVE-2026-20691/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20691/macOS/advisory.md) | | [✅](Medium/CVE-2026-20691/watchOS/advisory.md) | [✅](Medium/CVE-2026-20691/visionOS/advisory.md) | [✅](Medium/CVE-2026-20691/Safari/advisory.md) | |  |
+| CVE-2026-20690 | Medium | [✅](Medium/CVE-2026-20690/iOS/advisory.md) | [✅](Medium/CVE-2026-20690/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20690/macOS/advisory.md) | [✅](Medium/CVE-2026-20690/tvOS/advisory.md) | [✅](Medium/CVE-2026-20690/watchOS/advisory.md) | [✅](Medium/CVE-2026-20690/visionOS/advisory.md) | | |  |
+| CVE-2026-20688 | Critical | [✅](Critical/CVE-2026-20688/iOS/advisory.md) | [✅](Critical/CVE-2026-20688/iPadOS/advisory.md) | [✅](Critical/CVE-2026-20688/macOS/advisory.md) | | | [✅](Critical/CVE-2026-20688/visionOS/advisory.md) | | |  |
+| CVE-2026-20687 | High | [✅](High/CVE-2026-20687/iOS/advisory.md) | [✅](High/CVE-2026-20687/iPadOS/advisory.md) | [✅](High/CVE-2026-20687/macOS/advisory.md) | [✅](High/CVE-2026-20687/tvOS/advisory.md) | [✅](High/CVE-2026-20687/watchOS/advisory.md) | | | |  |
+| CVE-2026-20686 | Medium | [✅](Medium/CVE-2026-20686/iOS/advisory.md) | [✅](Medium/CVE-2026-20686/iPadOS/advisory.md) | | | | | | |  |
+| CVE-2026-20684 | Low | | | [✅](Low/CVE-2026-20684/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20682 | Medium | [✅](Medium/CVE-2026-20682/iOS/advisory.md) | [✅](Medium/CVE-2026-20682/iPadOS/advisory.md) | | | | | | |  |
 | CVE-2026-20681 | Low | | | [✅](Low/CVE-2026-20681/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20680 | Medium | [✅](Medium/CVE-2026-20680/iOS/advisory.md) | [✅](Medium/CVE-2026-20680/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20680/macOS/advisory.md) | | | | | |  |
@@ -17,19 +90,25 @@ This repository contains scripts for monitoring Apple Security Advisories, findi
 | CVE-2026-20674 | Medium | [✅](Medium/CVE-2026-20674/iOS/advisory.md) | [✅](Medium/CVE-2026-20674/iPadOS/advisory.md) | | | | | | |  |
 | CVE-2026-20673 | Medium | [✅](Medium/CVE-2026-20673/iOS/advisory.md) | [✅](Medium/CVE-2026-20673/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20673/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20671 | Low | [✅](Low/CVE-2026-20671/iOS/advisory.md) | [✅](Low/CVE-2026-20671/iPadOS/advisory.md) | [✅](Low/CVE-2026-20671/macOS/advisory.md) | [✅](Low/CVE-2026-20671/tvOS/advisory.md) | [✅](Low/CVE-2026-20671/watchOS/advisory.md) | [✅](Low/CVE-2026-20671/visionOS/advisory.md) | | |  |
+| CVE-2026-20670 | Medium | | | [✅](Medium/CVE-2026-20670/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20669 | Medium | | | [✅](Medium/CVE-2026-20669/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20668 | Medium | [✅](Medium/CVE-2026-20668/iOS/advisory.md) | [✅](Medium/CVE-2026-20668/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20668/macOS/advisory.md) | | | [✅](Medium/CVE-2026-20668/visionOS/advisory.md) | | |  |
 | CVE-2026-20667 | High | [✅](High/CVE-2026-20667/iOS/advisory.md) | [✅](High/CVE-2026-20667/iPadOS/advisory.md) | [✅](High/CVE-2026-20667/macOS/advisory.md) | | [✅](High/CVE-2026-20667/watchOS/advisory.md) | | | |  |
 | CVE-2026-20666 | Medium | | | [✅](Medium/CVE-2026-20666/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20665 | Medium | [✅](Medium/CVE-2026-20665/iOS/advisory.md) | [✅](Medium/CVE-2026-20665/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20665/macOS/advisory.md) | [✅](Medium/CVE-2026-20665/tvOS/advisory.md) | [✅](Medium/CVE-2026-20665/watchOS/advisory.md) | [✅](Medium/CVE-2026-20665/visionOS/advisory.md) | [✅](Medium/CVE-2026-20665/Safari/advisory.md) | |  |
+| CVE-2026-20664 | Medium | [✅](Medium/CVE-2026-20664/iOS/advisory.md) | [✅](Medium/CVE-2026-20664/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20664/macOS/advisory.md) | | | [✅](Medium/CVE-2026-20664/visionOS/advisory.md) | [✅](Medium/CVE-2026-20664/Safari/advisory.md) | |  |
 | CVE-2026-20663 | Low | [✅](Low/CVE-2026-20663/iOS/advisory.md) | [✅](Low/CVE-2026-20663/iPadOS/advisory.md) | | | | | | |  |
 | CVE-2026-20662 | Medium | | | [✅](Medium/CVE-2026-20662/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20661 | Medium | [✅](Medium/CVE-2026-20661/iOS/advisory.md) | [✅](Medium/CVE-2026-20661/iPadOS/advisory.md) | | | | | | |  |
 | CVE-2026-20660 | High | [✅](High/CVE-2026-20660/iOS/advisory.md) | [✅](High/CVE-2026-20660/iPadOS/advisory.md) | [✅](High/CVE-2026-20660/macOS/advisory.md) | | | [✅](High/CVE-2026-20660/visionOS/advisory.md) | [✅](High/CVE-2026-20660/Safari/advisory.md) | |  |
 | CVE-2026-20658 | High | | | [✅](High/CVE-2026-20658/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20657 | Medium | [✅](Medium/CVE-2026-20657/iOS/advisory.md) | [✅](Medium/CVE-2026-20657/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20657/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20656 | Low | [✅](Low/CVE-2026-20656/iOS/advisory.md) | [✅](Low/CVE-2026-20656/iPadOS/advisory.md) | [✅](Low/CVE-2026-20656/macOS/advisory.md) | | | | [✅](Low/CVE-2026-20656/Safari/advisory.md) | |  |
 | CVE-2026-20655 | Medium | [✅](Medium/CVE-2026-20655/iOS/advisory.md) | [✅](Medium/CVE-2026-20655/iPadOS/advisory.md) | | | | | | |  |
 | CVE-2026-20654 | Medium | [✅](Medium/CVE-2026-20654/iOS/advisory.md) | [✅](Medium/CVE-2026-20654/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20654/macOS/advisory.md) | [✅](Medium/CVE-2026-20654/tvOS/advisory.md) | [✅](Medium/CVE-2026-20654/watchOS/advisory.md) | [✅](Medium/CVE-2026-20654/visionOS/advisory.md) | | |  |
 | CVE-2026-20653 | Medium | [✅](Medium/CVE-2026-20653/iOS/advisory.md) | [✅](Medium/CVE-2026-20653/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20653/macOS/advisory.md) | | | [✅](Medium/CVE-2026-20653/visionOS/advisory.md) | | |  |
 | CVE-2026-20652 | High | [✅](High/CVE-2026-20652/iOS/advisory.md) | [✅](High/CVE-2026-20652/iPadOS/advisory.md) | [✅](High/CVE-2026-20652/macOS/advisory.md) | | | [✅](High/CVE-2026-20652/visionOS/advisory.md) | [✅](High/CVE-2026-20652/Safari/advisory.md) | |  |
+| CVE-2026-20651 | Medium | | | [✅](Medium/CVE-2026-20651/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20650 | High | [✅](High/CVE-2026-20650/iOS/advisory.md) | [✅](High/CVE-2026-20650/iPadOS/advisory.md) | [✅](High/CVE-2026-20650/macOS/advisory.md) | [✅](High/CVE-2026-20650/tvOS/advisory.md) | [✅](High/CVE-2026-20650/watchOS/advisory.md) | [✅](High/CVE-2026-20650/visionOS/advisory.md) | | |  |
 | CVE-2026-20649 | High | [✅](High/CVE-2026-20649/iOS/advisory.md) | [✅](High/CVE-2026-20649/iPadOS/advisory.md) | [✅](High/CVE-2026-20649/macOS/advisory.md) | [✅](High/CVE-2026-20649/tvOS/advisory.md) | [✅](High/CVE-2026-20649/watchOS/advisory.md) | | | |  |
 | CVE-2026-20648 | Medium | | | [✅](Medium/CVE-2026-20648/macOS/advisory.md) | | | | | |  |
@@ -37,14 +116,19 @@ This repository contains scripts for monitoring Apple Security Advisories, findi
 | CVE-2026-20646 | Low | | | [✅](Low/CVE-2026-20646/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20645 | Medium | [✅](Medium/CVE-2026-20645/iOS/advisory.md) | [✅](Medium/CVE-2026-20645/iPadOS/advisory.md) | | | | | | |  |
 | CVE-2026-20644 | Medium | [✅](Medium/CVE-2026-20644/iOS/advisory.md) | [✅](Medium/CVE-2026-20644/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20644/macOS/advisory.md) | | | [✅](Medium/CVE-2026-20644/visionOS/advisory.md) | [✅](Medium/CVE-2026-20644/Safari/advisory.md) | |  |
-| CVE-2026-20643 | Medium | [✅](Medium/CVE-2026-20643/iOS/advisory.md) | [✅](Medium/CVE-2026-20643/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20643/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20643 | Medium | [✅](Medium/CVE-2026-20643/iOS/advisory.md) | [✅](Medium/CVE-2026-20643/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20643/macOS/advisory.md) | | | [✅](Medium/CVE-2026-20643/visionOS/advisory.md) | [✅](Medium/CVE-2026-20643/Safari/advisory.md) | |  |
 | CVE-2026-20642 | Medium | [✅](Medium/CVE-2026-20642/iOS/advisory.md) | [✅](Medium/CVE-2026-20642/iPadOS/advisory.md) | | | | | | |  |
 | CVE-2026-20641 | High | [✅](High/CVE-2026-20641/iOS/advisory.md) | [✅](High/CVE-2026-20641/iPadOS/advisory.md) | [✅](High/CVE-2026-20641/macOS/advisory.md) | [✅](High/CVE-2026-20641/tvOS/advisory.md) | [✅](High/CVE-2026-20641/watchOS/advisory.md) | [✅](High/CVE-2026-20641/visionOS/advisory.md) | | |  |
 | CVE-2026-20640 | Medium | [✅](Medium/CVE-2026-20640/iOS/advisory.md) | [✅](Medium/CVE-2026-20640/iPadOS/advisory.md) | | | | | | |  |
+| CVE-2026-20639 | High | | | [✅](High/CVE-2026-20639/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20638 | Medium | [✅](Medium/CVE-2026-20638/iOS/advisory.md) | [✅](Medium/CVE-2026-20638/iPadOS/advisory.md) | | | | | | |  |
+| CVE-2026-20637 | Medium | [✅](Medium/CVE-2026-20637/iOS/advisory.md) | [✅](Medium/CVE-2026-20637/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20637/macOS/advisory.md) | | [✅](Medium/CVE-2026-20637/watchOS/advisory.md) | [✅](Medium/CVE-2026-20637/visionOS/advisory.md) | | |  |
 | CVE-2026-20636 | Medium | [✅](Medium/CVE-2026-20636/iOS/advisory.md) | [✅](Medium/CVE-2026-20636/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20636/macOS/advisory.md) | | | [✅](Medium/CVE-2026-20636/visionOS/advisory.md) | [✅](Medium/CVE-2026-20636/Safari/advisory.md) | |  |
 | CVE-2026-20635 | Medium | [✅](Medium/CVE-2026-20635/iOS/advisory.md) | [✅](Medium/CVE-2026-20635/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20635/macOS/advisory.md) | [✅](Medium/CVE-2026-20635/tvOS/advisory.md) | [✅](Medium/CVE-2026-20635/watchOS/advisory.md) | [✅](Medium/CVE-2026-20635/visionOS/advisory.md) | [✅](Medium/CVE-2026-20635/Safari/advisory.md) | |  |
 | CVE-2026-20634 | Medium | [✅](Medium/CVE-2026-20634/iOS/advisory.md) | [✅](Medium/CVE-2026-20634/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20634/macOS/advisory.md) | [✅](Medium/CVE-2026-20634/tvOS/advisory.md) | [✅](Medium/CVE-2026-20634/watchOS/advisory.md) | [✅](Medium/CVE-2026-20634/visionOS/advisory.md) | | |  |
+| CVE-2026-20633 | Medium | | | [✅](Medium/CVE-2026-20633/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20632 | Medium | | | [✅](Medium/CVE-2026-20632/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20631 | High | | | [✅](High/CVE-2026-20631/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20630 | Medium | | | [✅](Medium/CVE-2026-20630/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20629 | Medium | | | [✅](Medium/CVE-2026-20629/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20628 | High | [✅](High/CVE-2026-20628/iOS/advisory.md) | [✅](High/CVE-2026-20628/iPadOS/advisory.md) | [✅](High/CVE-2026-20628/macOS/advisory.md) | [✅](High/CVE-2026-20628/tvOS/advisory.md) | [✅](High/CVE-2026-20628/watchOS/advisory.md) | [✅](High/CVE-2026-20628/visionOS/advisory.md) | | |  |
@@ -53,6 +137,7 @@ This repository contains scripts for monitoring Apple Security Advisories, findi
 | CVE-2026-20625 | Medium | | | [✅](Medium/CVE-2026-20625/macOS/advisory.md) | | | [✅](Medium/CVE-2026-20625/visionOS/advisory.md) | | |  |
 | CVE-2026-20624 | Medium | | | [✅](Medium/CVE-2026-20624/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20623 | Medium | | | [✅](Medium/CVE-2026-20623/macOS/advisory.md) | | | | | |  |
+| CVE-2026-20622 | High | | | [✅](High/CVE-2026-20622/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20621 | Medium | [✅](Medium/CVE-2026-20621/iOS/advisory.md) | [✅](Medium/CVE-2026-20621/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20621/macOS/advisory.md) | | | [✅](Medium/CVE-2026-20621/visionOS/advisory.md) | | |  |
 | CVE-2026-20620 | High | | | [✅](High/CVE-2026-20620/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20619 | Medium | | | [✅](Medium/CVE-2026-20619/macOS/advisory.md) | | | | | |  |
@@ -66,6 +151,7 @@ This repository contains scripts for monitoring Apple Security Advisories, findi
 | CVE-2026-20610 | High | | | [✅](High/CVE-2026-20610/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20609 | Medium | [✅](Medium/CVE-2026-20609/iOS/advisory.md) | [✅](Medium/CVE-2026-20609/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20609/macOS/advisory.md) | [✅](Medium/CVE-2026-20609/tvOS/advisory.md) | [✅](Medium/CVE-2026-20609/watchOS/advisory.md) | [✅](Medium/CVE-2026-20609/visionOS/advisory.md) | | |  |
 | CVE-2026-20608 | Medium | [✅](Medium/CVE-2026-20608/iOS/advisory.md) | [✅](Medium/CVE-2026-20608/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20608/macOS/advisory.md) | | | [✅](Medium/CVE-2026-20608/visionOS/advisory.md) | [✅](Medium/CVE-2026-20608/Safari/advisory.md) | |  |
+| CVE-2026-20607 | Medium | | | [✅](Medium/CVE-2026-20607/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20606 | High | [✅](High/CVE-2026-20606/iOS/advisory.md) | [✅](High/CVE-2026-20606/iPadOS/advisory.md) | [✅](High/CVE-2026-20606/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20605 | Medium | [✅](Medium/CVE-2026-20605/iOS/advisory.md) | [✅](Medium/CVE-2026-20605/iPadOS/advisory.md) | [✅](Medium/CVE-2026-20605/macOS/advisory.md) | | | | | |  |
 | CVE-2026-20603 | Medium | | | [✅](Medium/CVE-2026-20603/macOS/advisory.md) | | | | | |  |
@@ -75,10 +161,16 @@ This repository contains scripts for monitoring Apple Security Advisories, findi
 | CVE-2025-7425 | High | [✅](High/CVE-2025-7425/iOS/advisory.md) | [✅](High/CVE-2025-7425/iPadOS/advisory.md) | [✅](High/CVE-2025-7425/macOS/advisory.md) | [✅](High/CVE-2025-7425/tvOS/advisory.md) | [✅](High/CVE-2025-7425/watchOS/advisory.md) | [✅](High/CVE-2025-7425/visionOS/advisory.md) | [✅](High/CVE-2025-7425/Safari/advisory.md) | |  |
 | CVE-2025-7424 | High | [✅](High/CVE-2025-7424/iOS/advisory.md) | [✅](High/CVE-2025-7424/iPadOS/advisory.md) | [✅](High/CVE-2025-7424/macOS/advisory.md) | [✅](High/CVE-2025-7424/tvOS/advisory.md) | [✅](High/CVE-2025-7424/watchOS/advisory.md) | [✅](High/CVE-2025-7424/visionOS/advisory.md) | [✅](High/CVE-2025-7424/Safari/advisory.md) | |  |
 | CVE-2025-6965 | Critical | [✅](Critical/CVE-2025-6965/iOS/advisory.md) | [✅](Critical/CVE-2025-6965/iPadOS/advisory.md) | [✅](Critical/CVE-2025-6965/macOS/advisory.md) | [✅](Critical/CVE-2025-6965/tvOS/advisory.md) | [✅](Critical/CVE-2025-6965/watchOS/advisory.md) | [✅](Critical/CVE-2025-6965/visionOS/advisory.md) | | |  |
+| CVE-2025-66200 | Medium | | | [✅](Medium/CVE-2025-66200/macOS/advisory.md) | | | | | |  |
 | CVE-2025-6558 | High | [✅](High/CVE-2025-6558/iOS/advisory.md) | [✅](High/CVE-2025-6558/iPadOS/advisory.md) | [✅](High/CVE-2025-6558/macOS/advisory.md) | [✅](High/CVE-2025-6558/tvOS/advisory.md) | [✅](High/CVE-2025-6558/watchOS/advisory.md) | [✅](High/CVE-2025-6558/visionOS/advisory.md) | [✅](High/CVE-2025-6558/Safari/advisory.md) | |  |
+| CVE-2025-65082 | Medium | | | [✅](Medium/CVE-2025-65082/macOS/advisory.md) | | | | | |  |
+| CVE-2025-64505 | Medium | [✅](Medium/CVE-2025-64505/iOS/advisory.md) | [✅](Medium/CVE-2025-64505/iPadOS/advisory.md) | [✅](Medium/CVE-2025-64505/macOS/advisory.md) | [✅](Medium/CVE-2025-64505/tvOS/advisory.md) | [✅](Medium/CVE-2025-64505/watchOS/advisory.md) | [✅](Medium/CVE-2025-64505/visionOS/advisory.md) | | |  |
 | CVE-2025-6442 | Medium | | | [✅](Medium/CVE-2025-6442/macOS/advisory.md) | | | | | |  |
+| CVE-2025-59775 | High | | | [✅](High/CVE-2025-59775/macOS/advisory.md) | | | | | |  |
 | CVE-2025-59375 | High | [✅](High/CVE-2025-59375/iOS/advisory.md) | [✅](High/CVE-2025-59375/iPadOS/advisory.md) | [✅](High/CVE-2025-59375/macOS/advisory.md) | [✅](High/CVE-2025-59375/tvOS/advisory.md) | [✅](High/CVE-2025-59375/watchOS/advisory.md) | [✅](High/CVE-2025-59375/visionOS/advisory.md) | | |  |
 | CVE-2025-5918 | Low | [✅](Low/CVE-2025-5918/iOS/advisory.md) | [✅](Low/CVE-2025-5918/iPadOS/advisory.md) | [✅](Low/CVE-2025-5918/macOS/advisory.md) | | | | | |  |
+| CVE-2025-58098 | High | | | [✅](High/CVE-2025-58098/macOS/advisory.md) | | | | | |  |
+| CVE-2025-55753 | High | | | [✅](High/CVE-2025-55753/macOS/advisory.md) | | | | | |  |
 | CVE-2025-53906 | Medium | | | [✅](Medium/CVE-2025-53906/macOS/advisory.md) | | | | | |  |
 | CVE-2025-48384 | High | | | | | | | | [✅](High/CVE-2025-48384/Xcode/advisory.md) |  |
 | CVE-2025-46316 | Medium | [✅](Medium/CVE-2025-46316/iOS/advisory.md) | [✅](Medium/CVE-2025-46316/iPadOS/advisory.md) | [✅](Medium/CVE-2025-46316/macOS/advisory.md) | | | | | |  |
@@ -115,6 +207,7 @@ This repository contains scripts for monitoring Apple Security Advisories, findi
 | CVE-2025-43537 | Medium | [✅](Medium/CVE-2025-43537/iOS/advisory.md) | [✅](Medium/CVE-2025-43537/iPadOS/advisory.md) | | | | | | |  |
 | CVE-2025-43536 | Medium | [✅](Medium/CVE-2025-43536/iOS/advisory.md) | [✅](Medium/CVE-2025-43536/iPadOS/advisory.md) | [✅](Medium/CVE-2025-43536/macOS/advisory.md) | | | | [✅](Medium/CVE-2025-43536/Safari/advisory.md) | |  |
 | CVE-2025-43535 | Medium | [✅](Medium/CVE-2025-43535/iOS/advisory.md) | [✅](Medium/CVE-2025-43535/iPadOS/advisory.md) | [✅](Medium/CVE-2025-43535/macOS/advisory.md) | | | [✅](Medium/CVE-2025-43535/visionOS/advisory.md) | [✅](Medium/CVE-2025-43535/Safari/advisory.md) | |  |
+| CVE-2025-43534 | Medium | [✅](Medium/CVE-2025-43534/iOS/advisory.md) | [✅](Medium/CVE-2025-43534/iPadOS/advisory.md) | | | | | | |  |
 | CVE-2025-43533 | Low | [✅](Low/CVE-2025-43533/iOS/advisory.md) | [✅](Low/CVE-2025-43533/iPadOS/advisory.md) | [✅](Low/CVE-2025-43533/macOS/advisory.md) | [✅](Low/CVE-2025-43533/tvOS/advisory.md) | [✅](Low/CVE-2025-43533/watchOS/advisory.md) | [✅](Low/CVE-2025-43533/visionOS/advisory.md) | | |  |
 | CVE-2025-43532 | Low | [✅](Low/CVE-2025-43532/iOS/advisory.md) | [✅](Low/CVE-2025-43532/iPadOS/advisory.md) | [✅](Low/CVE-2025-43532/macOS/advisory.md) | [✅](Low/CVE-2025-43532/tvOS/advisory.md) | [✅](Low/CVE-2025-43532/watchOS/advisory.md) | [✅](Low/CVE-2025-43532/visionOS/advisory.md) | | |  |
 | CVE-2025-43531 | Low | [✅](Low/CVE-2025-43531/iOS/advisory.md) | [✅](Low/CVE-2025-43531/iPadOS/advisory.md) | [✅](Low/CVE-2025-43531/macOS/advisory.md) | [✅](Low/CVE-2025-43531/tvOS/advisory.md) | [✅](Low/CVE-2025-43531/watchOS/advisory.md) | [✅](Low/CVE-2025-43531/visionOS/advisory.md) | [✅](Low/CVE-2025-43531/Safari/advisory.md) | |  |
@@ -758,6 +851,7 @@ This repository contains scripts for monitoring Apple Security Advisories, findi
 | CVE-2025-24087 | Medium | | | [✅](Medium/CVE-2025-24087/macOS/advisory.md) | | | | | |  |
 | CVE-2025-24086 | Medium | [✅](Medium/CVE-2025-24086/iOS/advisory.md) | [✅](Medium/CVE-2025-24086/iPadOS/advisory.md) | [✅](Medium/CVE-2025-24086/macOS/advisory.md) | [✅](Medium/CVE-2025-24086/tvOS/advisory.md) | [✅](Medium/CVE-2025-24086/watchOS/advisory.md) | [✅](Medium/CVE-2025-24086/visionOS/advisory.md) | | |  |
 | CVE-2025-24085 | Critical | [✅](Critical/CVE-2025-24085/iOS/advisory.md) | [✅](Critical/CVE-2025-24085/iPadOS/advisory.md) | [✅](Critical/CVE-2025-24085/macOS/advisory.md) | [✅](Critical/CVE-2025-24085/tvOS/advisory.md) | [✅](Critical/CVE-2025-24085/watchOS/advisory.md) | [✅](Critical/CVE-2025-24085/visionOS/advisory.md) | | |  |
+| CVE-2025-14524 | Medium | [✅](Medium/CVE-2025-14524/iOS/advisory.md) | [✅](Medium/CVE-2025-14524/iPadOS/advisory.md) | [✅](Medium/CVE-2025-14524/macOS/advisory.md) | [✅](Medium/CVE-2025-14524/tvOS/advisory.md) | [✅](Medium/CVE-2025-14524/watchOS/advisory.md) | [✅](Medium/CVE-2025-14524/visionOS/advisory.md) | | |  |
 | CVE-2025-14174 | High | [✅](High/CVE-2025-14174/iOS/advisory.md) | [✅](High/CVE-2025-14174/iPadOS/advisory.md) | [✅](High/CVE-2025-14174/macOS/advisory.md) | [✅](High/CVE-2025-14174/tvOS/advisory.md) | [✅](High/CVE-2025-14174/watchOS/advisory.md) | [✅](High/CVE-2025-14174/visionOS/advisory.md) | [✅](High/CVE-2025-14174/Safari/advisory.md) | |  |
 | CVE-2024-9956 | High | [✅](High/CVE-2024-9956/iOS/advisory.md) | [✅](High/CVE-2024-9956/iPadOS/advisory.md) | | | | | | |  |
 | CVE-2024-9681 | Medium | [✅](Medium/CVE-2024-9681/iOS/advisory.md) | [✅](Medium/CVE-2024-9681/iPadOS/advisory.md) | [✅](Medium/CVE-2024-9681/macOS/advisory.md) | [✅](Medium/CVE-2024-9681/tvOS/advisory.md) | [✅](Medium/CVE-2024-9681/watchOS/advisory.md) | [✅](Medium/CVE-2024-9681/visionOS/advisory.md) | | |  |
