@@ -2,11 +2,13 @@ name: main
 
 on:
   schedule:
-    - cron: '0 0 * * 0' # every week
+    - cron: "0 0 * * 0" # every week
   workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   main:
@@ -36,3 +38,11 @@ jobs:
           git add .
           git commit -m "Updated data at $(date)" || exit 0
           git push
+
+  deploy:
+    needs: main
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

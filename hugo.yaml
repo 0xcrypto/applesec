@@ -1,0 +1,92 @@
+baseURL: https://xnu.ivx.run
+title: Dissecting Apple
+languageCode: en-us
+enableRobotsTXT: true
+enableGitInfo: false
+hasCJKLanguage: false
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    style: github-dark
+
+params:
+  description: Tracking Apple platform CVEs and security advisories — automated weekly from Apple Security Releases and NVD.
+
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  sidebar:
+    width: 272
+
+  page:
+    width: normal
+
+  theme:
+    default: dark
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: false
+    displayPoweredBy: false
+
+  editURL:
+    enable: false
+
+  search:
+    enable: true
+    type: flexsearch
+
+  blog:
+    list:
+      displayTags: true
+
+menu:
+  main:
+    - name: iOS
+      url: /iOS/
+      weight: 1
+    - name: macOS
+      url: /macOS/
+      weight: 2
+    - name: iPadOS
+      url: /iPadOS/
+      weight: 3
+    - identifier: more
+      name: More ▾
+      weight: 4
+    - name: watchOS
+      url: /watchOS/
+      parent: more
+      weight: 1
+    - name: tvOS
+      url: /tvOS/
+      parent: more
+      weight: 2
+    - name: visionOS
+      url: /visionOS/
+      parent: more
+      weight: 3
+    - name: Safari
+      url: /Safari/
+      parent: more
+      weight: 4
+    - name: Xcode
+      url: /Xcode/
+      parent: more
+      weight: 5
+    - name: GitHub ↗
+      url: https://github.com/vi/apple-cves
+      weight: 99
+      params:
+        type: icon
+        icon: github
