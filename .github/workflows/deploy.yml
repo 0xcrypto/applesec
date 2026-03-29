@@ -1,4 +1,4 @@
-name: Deploy Hugo Blog
+name: Deploy to GitHub Pages
 
 on:
   workflow_dispatch:
