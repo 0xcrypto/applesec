@@ -6,7 +6,7 @@ Automated tracking of Apple platform security advisories and CVEs.
 
 | Severity | iOS | iPadOS | macOS | tvOS | watchOS | visionOS | Safari | Xcode |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [Critical](content/Critical/) | 90 | 103 | 167 | 46 | 51 | 32 | 15 | 5 |
-| [High](content/High/) | 732 | 751 | 1178 | 536 | 523 | 162 | 164 | 22 |
-| [Medium](content/Medium/) | 1050 | 1033 | 1686 | 577 | 641 | 278 | 235 | 27 |
-| [Low](content/Low/) | 128 | 129 | 140 | 29 | 43 | 13 | 5 | 1 |
+| [Critical](content/Critical/) | 116 | 129 | 222 | 72 | 71 | 54 | 15 | 5 |
+| [High](content/High/) | 760 | 779 | 1228 | 563 | 551 | 192 | 168 | 22 |
+| [Medium](content/Medium/) | 1083 | 1066 | 1743 | 624 | 693 | 325 | 241 | 27 |
+| [Low](content/Low/) | 128 | 129 | 141 | 29 | 43 | 13 | 5 | 1 |
